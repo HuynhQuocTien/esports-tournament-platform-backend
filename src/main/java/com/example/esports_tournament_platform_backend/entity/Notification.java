@@ -28,5 +28,6 @@ public class Notification {
     @JoinColumn(name = "user_id")
     private User user;
 
+    @Builder.Default
     private LocalDateTime createdAt = LocalDateTime.now();
 }
